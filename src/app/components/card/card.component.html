@@ -1,0 +1,55 @@
+<!-- ng-style -->
+<div
+  [ngStyle]="{ backgroundColor: isClicked ? '#e5e7eb' : 'white' }"
+  class="m-5 flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-md max-w-sm"
+>
+  <div class="flex-shrink-0">
+    <!-- property binding -->
+    <img
+      [src]="data.image"
+      alt="Profile Picture"
+      class="w-16 h-16 rounded-full border border-gray-300"
+    />
+  </div>
+  <!-- string Interpolation -->
+  <div class="ml-4">
+    <h2 class="text-xl font-semibold text-gray-800">
+      <!-- {{ dataFromForm.name || "Ahmed Mazen" }} -->
+      {{ userName }}
+    </h2>
+    <p class="text-gray-600">{{ data.job }}</p>
+    <p class="text-gray-500">Portsaid, University</p>
+    <div class="flex items-center mt-2">
+      <span class="text-gray-500 mr-2">Location:</span>
+      <p class="text-gray-700">{{ data.city }}</p>
+    </div>
+    <div class="flex space-x-1 mt-2">
+      <span class="text-yellow-500">⭐</span>
+      <span class="text-yellow-500">⭐</span>
+      <span class="text-yellow-500">⭐</span>
+      <span class="text-gray-300">⭐</span>
+    </div>
+    <!-- pipe && custom pipe -->
+    <div class="flex items-center mt-2">
+      <span class="text-gray-500 mr-2">Age:</span>
+      <!-- <p>{{ data.dob | date }}</p> -->
+      <p class="text-gray-700">{{ data.dob | changeDate }}</p>
+    </div>
+    <!-- event binding && custom pipe && ng-class -->
+    <button
+      class="mt-4 px-4 py-2 bg-red-400 text-white font-semibold rounded hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+      [ngClass]="{ buttonStyle: isClicked, buttonStyle2: !isClicked }"
+      (click)="changeMessage()"
+    >
+      {{ isClicked ? "Hello " + data.name : ("Message" | changeText) }}
+      <!-- {{ "Message" | changeText | slice : 0 : 5 | uppercase }} -->
+    </button>
+
+    <input
+      [(ngModel)]="name"
+      type="text"
+      class="border border-gray-300 rounded-md shadow-sm px-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500"
+    />
+    {{ name }}
+  </div>
+</div>

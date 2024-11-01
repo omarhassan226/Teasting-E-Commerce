@@ -1,0 +1,6 @@
+.transition-transform {
+  transition: transform 0.3s ease;
+}
+.-translate-x-full {
+  transform: translateX(-100%);
+}

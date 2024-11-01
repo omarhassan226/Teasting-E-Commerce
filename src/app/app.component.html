@@ -1,0 +1,34 @@
+<app-navbar></app-navbar>
+<div class="">
+  <!-- <app-card
+    [userName]="userName"
+    (selectedCard)="handleSelectId($event)"
+    class="col-span-1"
+    [dataFromForm]="dataFromForm"
+  ></app-card>
+  <app-form
+    class="col-span-2"
+    (nameChange)="handleNameChange($event)"
+  ></app-form> -->
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <!-- (selectId)="handleDelete($event)" -->
+    <app-product-card
+      *ngFor="let product of getProducts()"
+      [product]="product"
+    ></app-product-card>
+  </div>
+
+  <app-edit-form></app-edit-form>
+  <!-- (productAdded)="addProduct($event)" -->
+  <!-- [product]="selectedProduct"
+  [isOpen]="isModelOpen" -->
+  <app-product-form
+    (close)="closeModal()"
+    (submit)="handleProductUpdate(selectedProduct)"
+  ></app-product-form>
+
+  <app-footer></app-footer>
+</div>
+
+<button (click)="deleteProduct('1')">Delete Product One</button>

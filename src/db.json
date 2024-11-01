@@ -1,0 +1,141 @@
+{
+  "products": [
+    {
+      "id": "2",
+      "name": "Mechanical Keyboard",
+      "description": "RGB backlit mechanical keyboard with customizable keys.",
+      "price": 89.99,
+      "category": "Electronics",
+      "stock": 75,
+      "imageUrl": "https://example.com/images/mechanical-keyboard.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Bluetooth Headphones",
+      "description": "Noise-cancelling Bluetooth headphones with 20-hour battery life.",
+      "price": 69.99,
+      "category": "Audio",
+      "stock": 200,
+      "imageUrl": "https://example.com/images/bluetooth-headphones.jpg"
+    },
+    {
+      "id": "4",
+      "name": "USB-C Hub",
+      "description": "Multi-port USB-C hub for connecting multiple devices.",
+      "price": 39.99,
+      "category": "Accessories",
+      "stock": 120,
+      "imageUrl": "https://example.com/images/usb-c-hub.jpg"
+    },
+    {
+      "id": "5",
+      "name": "Portable Charger",
+      "description": "Fast charging portable power bank with 10000mAh capacity.",
+      "price": 24.99,
+      "category": "Accessories",
+      "stock": 180,
+      "imageUrl": "https://example.com/images/portable-charger.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Portable Charger",
+      "description": "Fast charging portable power bank with 10000mAh capacity.",
+      "price": 24.99,
+      "category": "Accessories",
+      "stock": 180,
+      "imageUrl": "https://example.com/images/portable-charger.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Omar Charger",
+      "description": "Fast charging portable power bank with 10000mAh capacity.",
+      "price": 24.99,
+      "category": "Accessories",
+      "stock": 180,
+      "imageUrl": "https://example.com/images/portable-charger.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Omar Hassan",
+      "description": "Fast charging portable power bank with 10000mAh capacity.",
+      "price": 24.99,
+      "category": "Accessories",
+      "stock": 180,
+      "imageUrl": "https://example.com/images/portable-charger.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Omar Hassan",
+      "description": "Fast charging portable power bank with 10000mAh capacity.",
+      "price": 24.99,
+      "category": "Accessories",
+      "stock": 180,
+      "imageUrl": "https://example.com/images/portable-charger.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Omar Hassan",
+      "description": "Fast charging portable power bank with 10000mAh capacity.",
+      "price": 24.99,
+      "category": "Accessories",
+      "stock": 180,
+      "imageUrl": "https://example.com/images/portable-charger.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Omar Hassan",
+      "description": "Fast charging portable power bank with 10000mAh capacity.",
+      "price": 24.99,
+      "category": "Accessories",
+      "stock": 180,
+      "imageUrl": "https://example.com/images/portable-charger.jpg"
+    }
+  ],
+  "users": [
+    {
+      "id": "1",
+      "username": "john_doe",
+      "email": "john@example.com",
+      "firstName": "John",
+      "lastName": "Doe",
+      "age": 28,
+      "isActive": true
+    },
+    {
+      "id": "2",
+      "username": "jane_smith",
+      "email": "jane@example.com",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "age": 34,
+      "isActive": true
+    },
+    {
+      "id": "3",
+      "username": "mike_jones",
+      "email": "mike@example.com",
+      "firstName": "Mike",
+      "lastName": "Jones",
+      "age": 45,
+      "isActive": false
+    },
+    {
+      "id": "4",
+      "username": "lisa_white",
+      "email": "lisa@example.com",
+      "firstName": "Lisa",
+      "lastName": "White",
+      "age": 22,
+      "isActive": true
+    },
+    {
+      "id": "5",
+      "username": "tom_brown",
+      "email": "tom@example.com",
+      "firstName": "Tom",
+      "lastName": "Brown",
+      "age": 31,
+      "isActive": false
+    }
+  ]
+}
