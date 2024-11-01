@@ -30,7 +30,9 @@
       <p class="text-gray-600 mt-2">
         {{ product.description }}
       </p>
-      <p class="text-gray-800 font-bold mt-2">{{ product.price }} $</p>
+      <p style="color: green" class="text-gray-800 font-bold mt-2">
+        {{ product.price }} $
+      </p>
 
       <div class="mt-2">
         <p *ngIf="product.inStock; else outOfStock" class="text-green-600">
